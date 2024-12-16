@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ivolve
+  name: ivolve
+  namespace: dev
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ivolve
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ivolve
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
