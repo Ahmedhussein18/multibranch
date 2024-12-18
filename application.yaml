@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
+  name: myapp-dev
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/ahmedhussein18/multibranch
     path: .
-    targetRevision: HEAD
+    targetRevision: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: dev
