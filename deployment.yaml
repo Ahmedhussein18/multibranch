@@ -4,7 +4,7 @@ metadata:
   labels:
     app: ivolve
   name: ivolve
-  namespace: dev
+  namespace: staging
 spec:
   replicas: 3
   selector:
