@@ -13,7 +13,7 @@ spec:
     namespace: dev
   
   syncPolicy:
-    syncOtions:
+    syncOptions:
     - CreateNamespace=true
 
     automated:
